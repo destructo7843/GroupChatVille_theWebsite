@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML and JavaScript Text Box</title>
+</head>
+<body>
+<style>
+    input[type="text"] {
+        width: 950px;
+        height: 100px;
+    }
+</style>
+<style>
+    .premier {
+        margin-top: 50px;
+        /*margin-left: 450px;*/
+        font-size: 30px;
+        background-color: #041375;
+        color: white;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .electionDate {
+        margin-top: 200px;
+        /*margin-left: 700px;*/
+        font-size: 15px;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+    <!-- 1. Added the label, the input text box, and the missing 'id' attributes -->
+    <input type="text" class=premier id="currentPremier" name="Current GroupChatVille Premier:" value="Press Space For Your GroupChatVille Premier" size="50" readonly>
+    <script src="java.js" defer></script>
+    <textarea rows="7" cols="50" class=electionDate id="electionDate" name="Election Date:" value="" size="50" readonly></textarea>
+    <script src="java.js" defer></script>
+</body>
+</html>
