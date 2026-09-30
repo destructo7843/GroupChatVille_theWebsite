@@ -10,7 +10,7 @@ window.addEventListener('keydown', (event) => {
     }
     else if(event.code == "Space"){
         event.preventDefault();
-        setText("currentPremier", "Press Space For Your GroupChatVille Premier!");
+        setText("currentPremier", "Press Space For Your GroupChatVille Premier (Or Click)");
         shown="False"
     }
 
