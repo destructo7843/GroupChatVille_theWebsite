@@ -15,14 +15,12 @@ window.addEventListener('keydown', (event) => {
     }
 
 });
-window.addEventListener('click', (event) => {
+currentPremier.addEventListener('click', (event) => {
     if (shown=="False") {
-        event.preventDefault();
         setText("currentPremier", "Your GroupChatVille Premier Is: " + premier);
         shown="True"
     }
     else {
-        event.preventDefault();
         setText("currentPremier", "Press Space For Your GroupChatVille Premier (Or Click)");
         shown="False"
     }
