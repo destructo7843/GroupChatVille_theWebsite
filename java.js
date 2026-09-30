@@ -4,16 +4,26 @@ let shown = "False"
 let ElectionDate = "September 30th 2026."
 window.addEventListener('keydown', (event) => {
     if (event.code == "Space" && shown=="False") {
-     // Prevent default scrolling behavior of the space bar
         event.preventDefault();
-            
-    // 3. Defined the missing setText function to target the input value
         setText("currentPremier", "Your GroupChatVille Premier Is: " + premier);
         shown="True"
     }
     else if(event.code == "Space"){
         event.preventDefault();
         setText("currentPremier", "Press Space For Your GroupChatVille Premier!");
+        shown="False"
+    }
+
+});
+window.addEventListener('click', (event) => {
+    if (shown=="False") {
+        event.preventDefault();
+        setText("currentPremier", "Your GroupChatVille Premier Is: " + premier);
+        shown="True"
+    }
+    else {
+        event.preventDefault();
+        setText("currentPremier", "Press Space For Your GroupChatVille Premier (Or Click)");
         shown="False"
     }
 
