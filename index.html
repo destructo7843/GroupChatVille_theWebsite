@@ -14,7 +14,6 @@
 <style>
     .premier {
         margin-top: 50px;
-        /*margin-left: 450px;*/
         font-size: 30px;
         background-color: #041375;
         color: white;
@@ -24,13 +23,28 @@
         margin-right: auto;
     }
     .electionDate {
-        margin-top: 200px;
-        /*margin-left: 700px;*/
-        font-size: 15px;
+        margin-top: 50px;
+        font-size: 20px;
         background-color: #ffffff;
         color: rgb(0, 0, 0);
         text-align: center;
         display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .form-label {
+        margin-top: 50px;
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .voteingLink {
+        margin-top: 4px;
+        font-size: 20px;
+        display: block;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
     }
@@ -40,5 +54,7 @@
     <script src="java.js" defer></script>
     <textarea rows="7" cols="50" class=electionDate id="electionDate" name="Election Date:" value="" size="50" readonly></textarea>
     <script src="java.js" defer></script>
+    <label class="form-label" id="votingLink" for="votingLink">Voting Link:</label>
+    <a class="voteingLink" href="https://docs.google.com/forms/d/e/1FAIpQLSddGbeJ_zOD3Yp4nkb1cGWSaRHHdQwLlK1mSmIszemt1BWPHQ/viewform?usp=dialog" target="_blank">Click here to vote</a>
 </body>
 </html>
