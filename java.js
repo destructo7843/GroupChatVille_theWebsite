@@ -1,5 +1,5 @@
 // 2. Your original JavaScript variable and event listener
-let premier = "Glenn Story"; 
+let premier = "Kroger"; 
 let shown = "False"  
 let ElectionDate = "October 31st 2026."
 window.addEventListener('keydown', (event) => {
