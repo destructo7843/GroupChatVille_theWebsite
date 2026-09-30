@@ -1,7 +1,7 @@
 // 2. Your original JavaScript variable and event listener
-let premier = "Johnny MethHead AKA The Martyr"; 
+let premier = "Glenn Story"; 
 let shown = "False"  
-let ElectionDate = "September 30th 2026."
+let ElectionDate = "October 31st 2026."
 window.addEventListener('keydown', (event) => {
     if (event.code == "Space" && shown=="False") {
         event.preventDefault();
