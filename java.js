@@ -20,6 +20,10 @@ ratmusic.addEventListener("timeupdate", () => {
         ratmusic.currentTime = musicLoopStart;
     }
 });
+ratmusic.addEventListener("ended", () => {
+    ratmusic.currentTime = musicLoopStart;
+    ratmusic.play().catch(() => {});
+});
 
 function premierImageOff(){ 
     if (premierImage) premierImage.hidden = true;
